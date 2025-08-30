@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Package, Calendar, DollarSign, TrendingUp } from 'lucide-react';
 import KpiCard from '../components/KpiCard';
 import Charts from '../components/Charts';
@@ -89,9 +89,9 @@ const Dashboard = () => {
       </div>
 
       {/* Charts */}
-      <Charts 
-        categoryData={insights.categoryData} 
-        trendData={insights.trendData} 
+      <Charts
+        categoryData={insights.categoryData}
+        trendData={insights.trendData}
       />
     </div>
   );
